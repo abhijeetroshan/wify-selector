@@ -1,32 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Connect to Home Wi-Fi</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; }
-    .qr-section { margin: 20px 0; }
-    img { width: 200px; margin: 10px; }
+    body { font-family: Arial, sans-serif; text-align: center; padding: 30px; background: #f9f9f9; }
+    h1 { margin-bottom: 20px; }
+    .wifi-option { margin: 20px 0; padding: 15px; background: #fff; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    a { display: inline-block; margin-top: 10px; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+    a:hover { background: #0056b3; }
+    .note { font-size: 0.9em; color: #666; margin-top: 30px; }
   </style>
 </head>
 <body>
-  <h1>Connect to Wi-Fi</h1>
-  <p>Scan the QR code for your floor:</p>
+  <h1>Connect to Home Wi-Fi</h1>
+  <p>Select your floor below to connect:</p>
 
-  <div class="qr-section">
-    <h3>Floor 1</h3>
-    <img src="Floor_1_WiFi_QR.png" alt="Floor 1 QR Code">
+  <div class="wifi-option">
+    <h2>Floor 1</h2>
+    <a href="WIFI:T:WPA;S:HomeFloor1;P:password1;;">Tap to Connect</a>
   </div>
 
-  <div class="qr-section">
-    <h3>Floor 2</h3>
-    <img src="Floor_2_WiFi_QR.png" alt="Floor 2 QR Code">
+  <div class="wifi-option">
+    <h2>Floor 2</h2>
+    <a href="WIFI:T:WPA;S:HomeFloor2;P:password2;;">Tap to Connect</a>
   </div>
 
-  <div class="qr-section">
-    <h3>Floor 3</h3>
-    <img src="Floor_3_WiFi_QR.png" alt="Floor 3 QR Code">
+  <div class="wifi-option">
+    <h2>Floor 3</h2>
+    <a href="WIFI:T:WPA;S:HomeFloor3;P:password3;;">Tap to Connect</a>
   </div>
+
+  <p class="note">Note: Tap-to-connect links work best on Android. iOS support may vary depending on browser.</p>
 </body>
 </html>
